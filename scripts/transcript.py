@@ -86,13 +86,30 @@ def parse(path: Path) -> list[dict]:
     return dedupe(cues)
 
 
+def _tail_head_overlap(prev_words: list[str], cur_words: list[str]) -> int:
+    """Longest k where the last k words of prev are the first k words of cur."""
+    for k in range(min(len(prev_words), len(cur_words)), 0, -1):
+        if prev_words[-k:] == cur_words[:k]:
+            return k
+    return 0
+
+
 def dedupe(cues: list[dict]) -> list[dict]:
     """Collapse YouTube's rolling captions.
 
-    A rolling pair looks like:  "so the thing nobody tells you"
-                                "so the thing nobody tells you about"
-    The earlier line is a strict prefix of the later one, so we keep the longer
-    and extend its start time backwards. We also drop exact repeats.
+    Rolling captions scroll: the tail of one cue reappears as the head of the
+    next.  "the thing nobody tells you about starting out"
+           "about starting out is that it compounds"
+    So the relationship is an overlap, not a prefix. Merging on prefix alone
+    leaves "about starting out" in the transcript twice, which inflates word
+    counts and hands the Clip Miner a timestamp pointing at a repeat.
+
+    We merge on the longest tail/head overlap and append only the remainder.
+    A strict prefix is just the case where the overlap is the whole of prev.
+
+    Overlaps of a single word are left alone. Real speech repeats short words
+    across a cue boundary often enough that merging on k=1 would delete words
+    the speaker actually said, and a lost word costs more than a duplicated one.
     """
     out: list[dict] = []
     for cue in cues:
@@ -101,8 +118,12 @@ def dedupe(cues: list[dict]) -> list[dict]:
             if cue["text"] == prev["text"]:
                 prev["end"] = max(prev["end"], cue["end"])
                 continue
-            if cue["text"].startswith(prev["text"] + " "):
-                prev["text"] = cue["text"]
+            prev_words = prev["text"].split()
+            cur_words = cue["text"].split()
+            k = _tail_head_overlap(prev_words, cur_words)
+            if k and (k >= 2 or k == len(prev_words)):
+                if k < len(cur_words):
+                    prev["text"] = " ".join(prev_words + cur_words[k:])
                 prev["end"] = max(prev["end"], cue["end"])
                 continue
         out.append(dict(cue))

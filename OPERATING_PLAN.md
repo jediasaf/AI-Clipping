@@ -9,6 +9,16 @@
 
 ## The actual objective
 
+> **AMENDED 2026-09-02 by owner decision (OVR-001).** The objective below is superseded:
+> the owner has chosen **revenue first**. Campaign selection and production now rank on
+> expected dollars, not on evidence quality. The randomized control arm of EXP-001 is not
+> being run, so Milestone G is not reachable on the current path.
+>
+> The original text is kept, not deleted, for two reasons. It states the reasoning that
+> justified the original choice, and that reasoning has not been refuted — only outranked.
+> And if revenue proves poor, this is what we would be returning to. A plan that quietly
+> rewrites its own history cannot tell us later whether we were right.
+
 The primary objective of the first seven days is **not revenue**.
 
 It is to determine whether we can **systematically create clips that outperform baseline

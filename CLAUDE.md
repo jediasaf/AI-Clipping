@@ -117,7 +117,7 @@ they poison the performance data we are building the whole system to collect.
 | `campaigns/` | Per-campaign audit files |
 | `sources/` | Approved source material |
 | `clips/` | Clip working files |
-| `scripts/` | `transcript.py` (caption parsing), `cut_clip.py` (frame-accurate 9:16 cuts) |
+| `scripts/` | `transcript.py` (caption parsing), `cut_clip.py` (frame-accurate 9:16 cuts), `setup_env.sh` (installs ffmpeg/yt-dlp into a fresh container) |
 
 Do not create additional files unnecessarily. This system's value is in it being small enough
 to actually maintain.

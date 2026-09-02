@@ -37,51 +37,168 @@ _Nothing yet._
 
 ## Platform mechanics — EXTERNAL constraints, not our evidence
 
-These are not our findings and do not follow the N-threshold rules above. They come from
-platform documentation, gathered 2026-09-02. They were read via search-engine summary, not
-fetched directly (org egress policy blocked all fetches), so treat as **Grade B — verify
-against the live policy page before betting on any of them.**
+These are not our findings and do not follow the N-threshold rules above. **Re-verified
+2026-09-02 by fetching the primary policy pages directly** (full record:
+`campaigns/verification-2026-09-02.md`). They were previously Grade B search-summary hearsay.
 
-They belong here because they are *constraints on what can work*, and getting them wrong
-costs more than a bad hook.
+The facts below are now **VERIFIED**. Note what that pass actually found: the quotes were
+mostly accurate and **three of our glosses on them were wrong**. Getting a quote right and
+its consequence wrong is the failure mode to watch for here — it reads as verified and acts
+as an unsourced assumption.
 
-1. **TikTok ranks per-viewer by predicted interaction, not follower count.** Prediction scores
-   for like/share/comment/skip are combined per viewer.
-   → A new zero-follower clipping account is not structurally disadvantaged the way it would
-   be on a follow-graph platform. This is why the $0-capital play is viable at all.
+1. **TikTok ranks per-viewer by predicted interaction, not follower count.** VERIFIED, and the
+   source is stronger than we claimed: *"Neither follower count nor whether the account has had
+   previous high-performing videos are direct factors."*
+   → A new zero-follower TikTok account is not structurally disadvantaged. This is why the
+   $0-capital play is viable at all.
    *(newsroom.tiktok.com/en-us/how-tiktok-recommends-videos-for-you)*
 
-2. **Completion is heavily weighted.** TikTok states that finishing a longer video receives
-   *greater weight* than weak signals like shared geography.
-   → Set clip length by where the payoff lands, not by a fixed target. Directly supports the
-   Edit Director's retention-over-polish priority.
+2. **Completion is heavily weighted.** VERIFIED word for word — finishing a longer video
+   receives *greater weight* than weak signals like shared geography.
+   → Set clip length by where the payoff lands, not by a fixed target. Supports the Edit
+   Director's retention-over-polish priority. Instagram states a parallel priority on
+   watch-through, so this travels across both platforms.
 
-3. **TikTok suppresses consecutive same-creator and same-sound videos** — it won't recommend
-   two in a row from the same creator or sound.
-   → A documented per-account delivery ceiling. This is the legitimate mechanical reason
-   distribution gets spread across accounts, and it caps what one account can do.
+3. **TikTok generally won't show two consecutive videos from the same creator or sound.**
+   Exact wording: *"Your For You feed **generally** won't show two videos in a row made with
+   the same sound or by the same creator."*
+   → This is **per-viewer feed sequencing, not an account-level delivery cap.** It is scoped to
+   one user's session and says nothing about total distribution an account can receive.
+   **CORRECTED 2026-09-02:** this file previously called it "a documented per-account delivery
+   ceiling" and treated it as the mechanical justification for spreading distribution across
+   accounts. The source contains no such thing, and we had dropped TikTok's own hedge
+   ("generally"). Any multi-account rationale is now an **EXPERIMENT**, not a sourced fact —
+   untested and unsupported. It matters because multi-account operation carries real cost and
+   real platform risk, and it was resting on a misread sentence.
 
-4. **YouTube's reused-content policy is the binding constraint on clipping for monetization.**
-   Content "not clearly your own original creation… with no added significant original
-   commentary, substantive modifications, or educational or entertainment value" is
-   **ineligible for monetization**. The repetitious-content policy was renamed "inauthentic
-   content" on 2025-07-15.
-   → **Raw cut-downs of someone else's footage are monetization-ineligible on YouTube by
-   written policy. Reach ≠ revenue.** Campaign-paid views and YouTube-monetized views are
-   different things, and any pitch conflating them is misrepresenting the mechanics.
-   *(support.google.com/youtube/answer/1311392, /12504220)*
+4. **YouTube's reused-content policy makes raw cut-downs monetization-ineligible.** VERIFIED
+   from primary sources on two mirrors. Content "not clearly your own original creation… with
+   no added significant original commentary, substantive modifications, or educational or
+   entertainment value" is ineligible for monetization. The rename to "inauthentic content"
+   (2025-07-15) is real and changed the name only, not the substance.
+   → **Two things this file previously omitted, both load-bearing:**
+   - **Permission is no defence.** YouTube: *"This policy applies even if you have permission
+     from the original creator. Reused content is separate from YouTube's Copyright
+     enforcement, which means it's not based on copyright, permission, or fair use."* A
+     campaign license answers the **copyright** question and is an invalid answer to the
+     **monetization** question. "The campaign said we could clip it" does not cure this.
+   - **Enforcement is channel-wide**, not per-video: monetization may be removed from the
+     entire channel. YouTube monetization is all-or-nothing per channel.
+   → **Campaign-paid views and YouTube-monetized views are different businesses.** Permission
+     does not merge them. This is not overcaution costing us a platform — YouTube monetization
+     was never the payable channel for clipping. Campaign payouts are the revenue mechanic.
+   *(support.google.com/youtube/answer/1311392 is the load-bearing citation; /12504220 is the
+   Shorts-specific restatement, not an independent source.)*
+   **UNKNOWN — NEEDS VERIFICATION:** YouTube does not state either way whether captions plus
+   9:16 reframing alone constitute "substantive modifications". Do not fill this in by
+   assumption in either direction.
 
-5. **Instagram penalizes third-party watermarks and prioritizes original content.** Repeat
-   Recommendations-Guidelines violations make an account ineligible for recommendation.
-   → **Never cross-post a TikTok-watermarked export to Reels.** Export clean per platform.
-   This is a free, avoidable reach loss.
+5. **Instagram runs a full originality regime — stronger than this file previously claimed.**
+   VERIFIED. Watermarks are named explicitly as a "low-effort edit", with the consequence that
+   an account "may not be seen in recommendations to new audiences" — assessed rolling 30-day,
+   at **account** level.
+   → **Never cross-post a TikTok-watermarked export to Reels.** Export clean per platform. On
+   Instagram this costs *reach*, which is the thing campaigns pay on, so it is a direct revenue
+   loss and a free one to avoid.
+   *(creators.instagram.com/original-content-guidelines)*
 
-6. **Reels distribution is majority-unfollowed.** Same consequence as (1).
+6. **Reels distribution is majority-unfollowed — but this does NOT make Instagram a second
+   TikTok.** VERIFIED: *"the majority of what you see is from accounts you don't follow"*
+   (qualitative; Instagram publishes no percentage).
+   **CORRECTED 2026-09-02:** this file previously read "same consequence as (1)" — i.e. that a
+   cold Instagram account is as unpenalized as a cold TikTok account. Instagram's own ranking
+   page contradicts it: *"We consider popularity signals such as number of followers."*
+   TikTok explicitly **excludes** follower count as a direct factor; Instagram explicitly
+   **includes** it. The platforms are opposite on the exact variable the $0-capital play
+   depends on.
+   → **TikTok first for cold-start campaign work. Instagram is not a free second surface.**
 
-7. **Whop Content Rewards mechanics:** submit live post URL + media file → brand review queue
-   → pay per 1,000 views; brands set a minimum earned amount before an item enters review;
-   flat-fee bonuses can stack. → The approval queue is both the fraud control and the
-   mechanism by which clippers get stiffed. Both are structural.
+7. **Whop Content Rewards mechanics.** VERIFIED, with corrections in both directions.
+   **SCOPE CORRECTION 2026-09-02 — read this before applying anything in this entry.**
+   `contentrewards.com` is **not Whop**. Whop is the payment rail; Content Rewards is a
+   separate operator that writes its own rules, and every campaign we are currently evaluating
+   is a Content Rewards campaign. **The protections below govern Whop-native campaigns and do
+   NOT govern Content Rewards ones.** Specifically, Content Rewards' own creator page states
+   *"Every submission is reviewed by the brand or their campaign manager, and nothing approves
+   automatically"* — there is no 48-hour auto-approval backstop — and its rejection grounds are
+   illustrative (*"Usually the brief: wrong platform, missing tags or disclosure, reused
+   content, or the post being edited or deleted after you submitted"*) rather than the closed
+   four-item list below. **Confirmed by direct fetch 2026-09-02** after two audits disagreed.
+   Note that **"reused content" is itself a listed rejection ground on a clipping platform.**
+   It most plausibly means reposting another clipper's work rather than clipping a brand's own
+   source, but that is INFERENCE and worth asking a campaign manager before relying on it.
+   Platform default is **submit the link within 30 minutes** of posting; individual campaigns
+   tighten this (Lovable specifies 10), so read the campaign's own figure.
+   → So the "we were too cynical" correction recorded here **does not apply to the campaigns
+   we are actually looking at.** Rejection risk on Content Rewards is higher and less
+   appealable than this entry implies. An appeal path does exist, but the grounds are open.
+   → Also load-bearing: Content Rewards §19.1 grants a licence only over footage *"a Brand
+   provides"*, and §19.2 makes the **creator** warrant they *"have cleared all third-party
+   rights."* No brand ownership warranty, no indemnity, no liability allocation. The contract
+   actively assigns rights risk to us — which is why "the brand said it was approved" is not
+   sufficient when the footage is visibly third-party.
+
+   → **We were too cynical about rejection.** The ToS *constrains* the brand: a seller may
+   reject only where the participant breaks the offer criteria or program terms, where there is
+   reasonable suspicion of fraud, or where Max Payout / End Date is reached. There is also a
+   48-hour auto-approval backstop for submissions the review AI flags as legit. Arbitrary
+   rejection risk is **lower** than we recorded, and being wrongly pessimistic costs us
+   campaigns.
+   → **We missed the two risks that are actually real:**
+   - **Budget exhaustion terminates payment mid-flight.** Hitting Max Payout or the End Date is
+     itself an enumerated valid rejection ground. A fully compliant, high-performing clip can be
+     legitimately unpaid because the budget emptied first. **This — not capricious brands — is
+     how clipping hours actually get burned on Whop.** Remaining budget, end date, and per-clip
+     cap are therefore a mandatory pre-production check, not a nice-to-have.
+   - **Payout timing is wholly discretionary.** Transfers occur "at such times as Whop
+     designates in its sole discretion". No committed payment window exists, so any cash-flow
+     assumption is UNKNOWN — NEEDS VERIFICATION.
+   **UNKNOWN:** the creator-side submission flow (widely repeated as "live post URL + media
+   file") is not stated on any primary page. Settled the first time we open a real campaign.
+
+8. **Content Rewards platform economics — VERIFIED 2026-09-02, and these apply to EVERY CPM
+   campaign on that board, not to any one brand.**
+   - **Creator fee: 25% to start**, falling to 20% past $1,000 lifetime, 12.5% past $2,500, 7%
+     past $5,000. So **every headline CPM is × 0.75 for us today.** A separate 10% is charged
+     brand-side — do not confuse the two.
+     → Early dollars are the most heavily taxed dollars we will ever earn. This argues for
+     concentrating volume on one campaign rather than spreading across several, since the fee
+     tier is on *lifetime* earnings.
+   - **Earning window: 7 days from approval, then a 3-day hold.** Platform-wide, not a
+     campaign quirk. **There is no long-tail campaign on this board to find.** A clip posted on
+     day 3 of a sprint pays around day 13; anything posted after day 4 settles after a 14-day
+     horizon closes. Accrual and cash are different dates and must not be planned as one.
+   - **Per-post and retainer campaigns pay a flat 7%, waived entirely above $5,000** — making
+     a per-post campaign worth ~1.33× a CPM campaign at the same headline value, with no view
+     risk at all. **As of 2026-09-02 there are ZERO per-post or retainer campaigns live**
+     (checked across /discover, both type filters, all five sort orders; all ~41 campaigns are
+     CPM). The structure strongly favours us and the inventory does not exist. **Standing watch
+     item** — the day per-post inventory appears, it likely outranks everything on rate.
+
+9. **The binding constraint at N=0 is the minimum-payout floor, not CPM.** EXPERIMENT, not
+   verified — but it follows from verified floors. Campaigns set a minimum payout per post
+   ($1–$2 typical, implying ~1,000 views; Double Coverage sets $15, implying ~10,000). A cold
+   account whose median post gets a few hundred views earns **exactly $0** on most clips
+   regardless of the rate.
+   → Rank campaigns by *what fraction of our clips will clear the floor*, not by headline CPM.
+   A high CPM behind a 10,000-view floor is bait at N=0.
+   → This is the first thing our own data will settle. We have no measured view distribution,
+   so the fraction is currently a guess.
+
+---
+
+### Research tradecraft — how to actually read these pages
+
+Recorded because two separate agents lost time to the same wall.
+
+- **JS-rendered pages: `https://r.jina.ai/<url>`** renders client-side pages server-side. This
+  cracked a Notion brief that had defeated two prior attempts, and `contentrewards.com` itself,
+  which is also client-side. Campaign pages returning an empty shell are not inaccessible —
+  they are unrendered. Verify anything important renders consistently rather than trusting a
+  single pass.
+- **Google Docs briefs:** append `?format=txt` to bypass the editor.
+- **A campaign listing page is not the brief.** Bible BFF's listing showed no entry gates while
+  its brief contained two hard ones. Never rate gates from the listing.
 
 ### Numbers we will NOT use
 
