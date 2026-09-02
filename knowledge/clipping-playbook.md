@@ -37,51 +37,102 @@ _Nothing yet._
 
 ## Platform mechanics — EXTERNAL constraints, not our evidence
 
-These are not our findings and do not follow the N-threshold rules above. They come from
-platform documentation, gathered 2026-09-02. They were read via search-engine summary, not
-fetched directly (org egress policy blocked all fetches), so treat as **Grade B — verify
-against the live policy page before betting on any of them.**
+These are not our findings and do not follow the N-threshold rules above. **Re-verified
+2026-09-02 by fetching the primary policy pages directly** (full record:
+`campaigns/verification-2026-09-02.md`). They were previously Grade B search-summary hearsay.
 
-They belong here because they are *constraints on what can work*, and getting them wrong
-costs more than a bad hook.
+The facts below are now **VERIFIED**. Note what that pass actually found: the quotes were
+mostly accurate and **three of our glosses on them were wrong**. Getting a quote right and
+its consequence wrong is the failure mode to watch for here — it reads as verified and acts
+as an unsourced assumption.
 
-1. **TikTok ranks per-viewer by predicted interaction, not follower count.** Prediction scores
-   for like/share/comment/skip are combined per viewer.
-   → A new zero-follower clipping account is not structurally disadvantaged the way it would
-   be on a follow-graph platform. This is why the $0-capital play is viable at all.
+1. **TikTok ranks per-viewer by predicted interaction, not follower count.** VERIFIED, and the
+   source is stronger than we claimed: *"Neither follower count nor whether the account has had
+   previous high-performing videos are direct factors."*
+   → A new zero-follower TikTok account is not structurally disadvantaged. This is why the
+   $0-capital play is viable at all.
    *(newsroom.tiktok.com/en-us/how-tiktok-recommends-videos-for-you)*
 
-2. **Completion is heavily weighted.** TikTok states that finishing a longer video receives
-   *greater weight* than weak signals like shared geography.
-   → Set clip length by where the payoff lands, not by a fixed target. Directly supports the
-   Edit Director's retention-over-polish priority.
+2. **Completion is heavily weighted.** VERIFIED word for word — finishing a longer video
+   receives *greater weight* than weak signals like shared geography.
+   → Set clip length by where the payoff lands, not by a fixed target. Supports the Edit
+   Director's retention-over-polish priority. Instagram states a parallel priority on
+   watch-through, so this travels across both platforms.
 
-3. **TikTok suppresses consecutive same-creator and same-sound videos** — it won't recommend
-   two in a row from the same creator or sound.
-   → A documented per-account delivery ceiling. This is the legitimate mechanical reason
-   distribution gets spread across accounts, and it caps what one account can do.
+3. **TikTok generally won't show two consecutive videos from the same creator or sound.**
+   Exact wording: *"Your For You feed **generally** won't show two videos in a row made with
+   the same sound or by the same creator."*
+   → This is **per-viewer feed sequencing, not an account-level delivery cap.** It is scoped to
+   one user's session and says nothing about total distribution an account can receive.
+   **CORRECTED 2026-09-02:** this file previously called it "a documented per-account delivery
+   ceiling" and treated it as the mechanical justification for spreading distribution across
+   accounts. The source contains no such thing, and we had dropped TikTok's own hedge
+   ("generally"). Any multi-account rationale is now an **EXPERIMENT**, not a sourced fact —
+   untested and unsupported. It matters because multi-account operation carries real cost and
+   real platform risk, and it was resting on a misread sentence.
 
-4. **YouTube's reused-content policy is the binding constraint on clipping for monetization.**
-   Content "not clearly your own original creation… with no added significant original
-   commentary, substantive modifications, or educational or entertainment value" is
-   **ineligible for monetization**. The repetitious-content policy was renamed "inauthentic
-   content" on 2025-07-15.
-   → **Raw cut-downs of someone else's footage are monetization-ineligible on YouTube by
-   written policy. Reach ≠ revenue.** Campaign-paid views and YouTube-monetized views are
-   different things, and any pitch conflating them is misrepresenting the mechanics.
-   *(support.google.com/youtube/answer/1311392, /12504220)*
+4. **YouTube's reused-content policy makes raw cut-downs monetization-ineligible.** VERIFIED
+   from primary sources on two mirrors. Content "not clearly your own original creation… with
+   no added significant original commentary, substantive modifications, or educational or
+   entertainment value" is ineligible for monetization. The rename to "inauthentic content"
+   (2025-07-15) is real and changed the name only, not the substance.
+   → **Two things this file previously omitted, both load-bearing:**
+   - **Permission is no defence.** YouTube: *"This policy applies even if you have permission
+     from the original creator. Reused content is separate from YouTube's Copyright
+     enforcement, which means it's not based on copyright, permission, or fair use."* A
+     campaign license answers the **copyright** question and is an invalid answer to the
+     **monetization** question. "The campaign said we could clip it" does not cure this.
+   - **Enforcement is channel-wide**, not per-video: monetization may be removed from the
+     entire channel. YouTube monetization is all-or-nothing per channel.
+   → **Campaign-paid views and YouTube-monetized views are different businesses.** Permission
+     does not merge them. This is not overcaution costing us a platform — YouTube monetization
+     was never the payable channel for clipping. Campaign payouts are the revenue mechanic.
+   *(support.google.com/youtube/answer/1311392 is the load-bearing citation; /12504220 is the
+   Shorts-specific restatement, not an independent source.)*
+   **UNKNOWN — NEEDS VERIFICATION:** YouTube does not state either way whether captions plus
+   9:16 reframing alone constitute "substantive modifications". Do not fill this in by
+   assumption in either direction.
 
-5. **Instagram penalizes third-party watermarks and prioritizes original content.** Repeat
-   Recommendations-Guidelines violations make an account ineligible for recommendation.
-   → **Never cross-post a TikTok-watermarked export to Reels.** Export clean per platform.
-   This is a free, avoidable reach loss.
+5. **Instagram runs a full originality regime — stronger than this file previously claimed.**
+   VERIFIED. Watermarks are named explicitly as a "low-effort edit", with the consequence that
+   an account "may not be seen in recommendations to new audiences" — assessed rolling 30-day,
+   at **account** level.
+   → **Never cross-post a TikTok-watermarked export to Reels.** Export clean per platform. On
+   Instagram this costs *reach*, which is the thing campaigns pay on, so it is a direct revenue
+   loss and a free one to avoid.
+   *(creators.instagram.com/original-content-guidelines)*
 
-6. **Reels distribution is majority-unfollowed.** Same consequence as (1).
+6. **Reels distribution is majority-unfollowed — but this does NOT make Instagram a second
+   TikTok.** VERIFIED: *"the majority of what you see is from accounts you don't follow"*
+   (qualitative; Instagram publishes no percentage).
+   **CORRECTED 2026-09-02:** this file previously read "same consequence as (1)" — i.e. that a
+   cold Instagram account is as unpenalized as a cold TikTok account. Instagram's own ranking
+   page contradicts it: *"We consider popularity signals such as number of followers."*
+   TikTok explicitly **excludes** follower count as a direct factor; Instagram explicitly
+   **includes** it. The platforms are opposite on the exact variable the $0-capital play
+   depends on.
+   → **TikTok first for cold-start campaign work. Instagram is not a free second surface.**
 
-7. **Whop Content Rewards mechanics:** submit live post URL + media file → brand review queue
-   → pay per 1,000 views; brands set a minimum earned amount before an item enters review;
-   flat-fee bonuses can stack. → The approval queue is both the fraud control and the
-   mechanism by which clippers get stiffed. Both are structural.
+7. **Whop Content Rewards mechanics.** VERIFIED, with corrections in both directions.
+   → **We were too cynical about rejection.** The ToS *constrains* the brand: a seller may
+   reject only where the participant breaks the offer criteria or program terms, where there is
+   reasonable suspicion of fraud, or where Max Payout / End Date is reached. There is also a
+   48-hour auto-approval backstop for submissions the review AI flags as legit. Arbitrary
+   rejection risk is **lower** than we recorded, and being wrongly pessimistic costs us
+   campaigns.
+   → **We missed the two risks that are actually real:**
+   - **Budget exhaustion terminates payment mid-flight.** Hitting Max Payout or the End Date is
+     itself an enumerated valid rejection ground. A fully compliant, high-performing clip can be
+     legitimately unpaid because the budget emptied first. **This — not capricious brands — is
+     how clipping hours actually get burned on Whop.** Remaining budget, end date, and per-clip
+     cap are therefore a mandatory pre-production check, not a nice-to-have.
+   - **Payout timing is wholly discretionary.** Transfers occur "at such times as Whop
+     designates in its sole discretion". No committed payment window exists, so any cash-flow
+     assumption is UNKNOWN — NEEDS VERIFICATION.
+   **UNKNOWN:** the creator-side submission flow (widely repeated as "live post URL + media
+   file") is not stated on any primary page. Settled the first time we open a real campaign.
+
+---
 
 ### Numbers we will NOT use
 

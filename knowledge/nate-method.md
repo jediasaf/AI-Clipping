@@ -1,16 +1,21 @@
 # NateJBiz — What He Actually Appears To Do
 
-**Researched:** 2026-09-02 · **Status:** partial, blocked
-**Method:** search-index queries only.
+**Researched:** 2026-09-02 · **Re-verified:** 2026-09-02 · **Status:** primary sources reached
+**Method:** originally search-index only; re-verified by direct fetch, including USPTO.
 
 ## Read this before using anything below
 
-**No primary source was fetched.** Every `WebFetch` and `curl` in this session returned a
-403/`EGRESS_BLOCKED` from the organization's egress proxy — including neutral controls
-(Wikipedia, google.com). Per `/root/.ccr/README.md` this is an org egress policy denial, and
-the documented instruction is to report it, not route around it. So it stays reported.
+**Superseded 2026-09-02.** The original pass fetched nothing — every request returned
+403/`EGRESS_BLOCKED`, including neutral controls. That restriction has since lifted, and the
+claims below were re-checked against primary sources. Full record:
+`campaigns/verification-2026-09-02.md`.
 
-Consequence: nothing here rests on a page anyone read. Evidence grades:
+What that changed: identity and trademark facts are now government-record verified, and the
+authorship of the videos is settled. **What it did not change: the income and scale claims are
+still UNVERIFIED, and re-verification made the case for skepticism stronger, not weaker.**
+Confirming who uploaded a video confirms nothing about what its title asserts.
+
+Evidence grades below refer to the ORIGINAL pass. Anything re-verified is marked inline.
 
 | Grade | Meaning |
 |-------|---------|
@@ -42,7 +47,12 @@ records found, and the firmest anchor available:
 - `CLIPR`, Serial **99230684**
 - `USECLIPR`, Serial **99230897**
 
-Attorney of record: Alexander Z. Lonstein, Ellenville NY. A nonfinal office action was issued.
+Attorney of record: Alexander Z. Lonstein, Ellenville NY.
+
+**CORRECTED 2026-09-02 (VERIFIED, USPTO TSDR — government record):** both filings are
+**SUSPENDED as of 2026-07-06**, not "nonfinal office action issued" as recorded above. Both are
+held by **Nathan Johnson as an individual**, *not* by an LLC. The Houston-entity / "Clipr LLC"
+framing is not supported by the trademark record.
 
 ### What he does (Grade A on structure, B on wording)
 
@@ -86,6 +96,10 @@ that skill. That is all the evidence supports.
    a company roughly 2–3 years old. Benign explanations exist (different denominators —
    agency-only vs. clipper-network vs. lifetime-managed) but none is stated. **This internal
    inconsistency is the single strongest reason for skepticism about any individual figure.**
+   **Strengthened 2026-09-02:** direct fetch of `useclipr.com` surfaced a *fourth* figure —
+   "2.7+ Billion Views Generated" — roughly 18x below the 50B on his LinkedIn. Two pages he
+   controls, an order of magnitude apart. Re-verification widened the spread rather than
+   resolving it.
 5. **He is a marketing operator, not a covered public figure.** *From:* the complete absence
    of independent journalism, funding records, or third-party reporting. Everything traces
    back to material he controls.
@@ -97,9 +111,10 @@ that skill. That is all the evidence supports.
 | Claim | Source type | Why unverified |
 |---|---|---|
 | "Over 50 billion organic views and $130,000,000" | LinkedIn, scraped by contact-data resellers | Self-reported, laundered through brokers. Conflicts with his own other figures. |
+| **"2.7+ Billion Views Generated"** — VERIFIED as site copy, 2026-09-02 | `useclipr.com`, his own homepage | **A fourth mutually-inconsistent scale figure.** ~18x below the "over 50 billion" on his LinkedIn. Both pages are ones he controls. Verifying the copy exists does not verify the number — it makes the inconsistency worse. |
 | "250,000,000 views per month"; "built with software" | His own X bio | Self-descriptive. No product, docs, or demo found for the software claim. |
 | "8 billion organic views in 4 months"; "7-figure run rate"; team of 20 "from Mr. Beast, NBC, YC, Barstool"; "40+ businesses and creators" | His own LinkedIn post | First-party but unaudited, and read only as a search summary. Ex-employer name-drops unverifiable without named individuals. |
-| Client list incl. Amalfi Jets, Chris Bumstead, Sara Saffari | LinkedIn + site | Five clients have dedicated URLs on his own domain. **Zero third-party confirmation from any client side** — no client press release, no agency-of-record announcement, no trade coverage. Portfolio pages are advertising. Notably, no portfolio pages found for Amalfi Jets, Bumstead or Saffari despite their appearing in the LinkedIn list. |
+| Client list incl. Amalfi Jets, Chris Bumstead, Sara Saffari | LinkedIn + site | Five clients have dedicated URLs on his own domain. **Zero third-party confirmation from any client side** — no client press release, no agency-of-record announcement, no trade coverage. Portfolio pages are advertising. **CORRECTED 2026-09-02:** Sara Saffari and Amalfi Jets **do** have portfolio pages on his own domain; Chris Bumstead does not. The earlier "none found" was an artifact of not being able to fetch the site. |
 | 26M views/1mo, 49M/3mo (Jonas Brothers); 50M+ over 11 episodes (King Bach) | His own portfolio pages | Self-reported. No methodology, no analytics screenshots, **no baseline** — i.e. no statement of what the client would have got anyway. |
 | "$21,000/week", "$100k/month" clipping income | His own YouTube **titles** | Title/thumbnail copy on lead-gen videos for a paid course. Advertising until someone watches and evaluates the proof shown. |
 | Clipr Academy at $49/month | Search summary of Whop listing + an SEO review-aggregator | Whop domains blocked. Price unconfirmed. Aggregator is exactly the non-authoritative source type we exclude. |
@@ -128,12 +143,18 @@ that skill. That is all the evidence supports.
 
 ## What a human with unrestricted access should check
 
-1. **USPTO TSDR for serials 99230684 and 99230897** — government record; verified legal name,
-   entity, and first-use-in-commerce dates. Anchors everything else. Highest value.
-2. **Watch `9krpfoW0i5E`, `yv5ge62NTOM`, `EOqX4gZi5sA`** — confirm the uploading channel is
-   @NateJBiz, and evaluate what proof sits behind the income claims.
-3. **Open `useclipr.com`** — screenshot portfolio pages; note whether analytics back the views.
-4. **Texas SOS filings for "Clipr LLC"** — test the Houston-entity claim.
+1. ~~**USPTO TSDR for serials 99230684 and 99230897**~~ — **DONE 2026-09-02.** Both SUSPENDED
+   as of 2026-07-06, held by Nathan Johnson as an individual, not an LLC.
+2. ~~**Confirm the uploading channel for `9krpfoW0i5E`, `yv5ge62NTOM`, `EOqX4gZi5sA`**~~ —
+   **DONE 2026-09-02** via YouTube's oEmbed API: all three are @NateJBiz. **Authorship only.**
+   The income claims in those titles remain UNVERIFIED — knowing who posted a video tells us
+   nothing about whether its title is true.
+3. ~~**Open `useclipr.com`**~~ — **DONE 2026-09-02.** Yielded a fourth contradictory scale
+   figure (above). No analytics evidence behind any portfolio view count.
+4. **Texas SOS filings for "Clipr LLC"** — still open, and now more interesting: the trademark
+   record shows an individual applicant, so the Houston-LLC framing has no support yet.
+5. **Clipr Academy pricing** — still UNVERIFIED. The "$49/month" figure is JS-gated on all
+   three live Whop listings. Do not substitute the SEO aggregator that repeats it.
 5. **Ask the client side** (Jonas Brothers' or Kinobody's team) whether Clipr was engaged.
    The only route to third-party confirmation of the client list.
 
