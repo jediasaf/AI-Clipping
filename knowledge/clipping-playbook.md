@@ -132,6 +132,35 @@ as an unsourced assumption.
    **UNKNOWN:** the creator-side submission flow (widely repeated as "live post URL + media
    file") is not stated on any primary page. Settled the first time we open a real campaign.
 
+8. **Content Rewards platform economics — VERIFIED 2026-09-02, and these apply to EVERY CPM
+   campaign on that board, not to any one brand.**
+   - **Creator fee: 25% to start**, falling to 20% past $1,000 lifetime, 12.5% past $2,500, 7%
+     past $5,000. So **every headline CPM is × 0.75 for us today.** A separate 10% is charged
+     brand-side — do not confuse the two.
+     → Early dollars are the most heavily taxed dollars we will ever earn. This argues for
+     concentrating volume on one campaign rather than spreading across several, since the fee
+     tier is on *lifetime* earnings.
+   - **Earning window: 7 days from approval, then a 3-day hold.** Platform-wide, not a
+     campaign quirk. **There is no long-tail campaign on this board to find.** A clip posted on
+     day 3 of a sprint pays around day 13; anything posted after day 4 settles after a 14-day
+     horizon closes. Accrual and cash are different dates and must not be planned as one.
+   - **Per-post and retainer campaigns pay a flat 7%, waived entirely above $5,000** — making
+     a per-post campaign worth ~1.33× a CPM campaign at the same headline value, with no view
+     risk at all. **As of 2026-09-02 there are ZERO per-post or retainer campaigns live**
+     (checked across /discover, both type filters, all five sort orders; all ~41 campaigns are
+     CPM). The structure strongly favours us and the inventory does not exist. **Standing watch
+     item** — the day per-post inventory appears, it likely outranks everything on rate.
+
+9. **The binding constraint at N=0 is the minimum-payout floor, not CPM.** EXPERIMENT, not
+   verified — but it follows from verified floors. Campaigns set a minimum payout per post
+   ($1–$2 typical, implying ~1,000 views; Double Coverage sets $15, implying ~10,000). A cold
+   account whose median post gets a few hundred views earns **exactly $0** on most clips
+   regardless of the rate.
+   → Rank campaigns by *what fraction of our clips will clear the floor*, not by headline CPM.
+   A high CPM behind a 10,000-view floor is bait at N=0.
+   → This is the first thing our own data will settle. We have no measured view distribution,
+   so the fraction is currently a guess.
+
 ---
 
 ### Numbers we will NOT use
