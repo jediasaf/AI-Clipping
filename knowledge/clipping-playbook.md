@@ -119,9 +119,16 @@ as an unsourced assumption.
    separate operator that writes its own rules, and every campaign we are currently evaluating
    is a Content Rewards campaign. **The protections below govern Whop-native campaigns and do
    NOT govern Content Rewards ones.** Specifically, Content Rewards' own creator page states
-   *"nothing approves automatically"* — there is no 48-hour auto-approval backstop — and its
-   rejection grounds are illustrative (*"Usually the brief: …"*) rather than the closed
-   four-item list below.
+   *"Every submission is reviewed by the brand or their campaign manager, and nothing approves
+   automatically"* — there is no 48-hour auto-approval backstop — and its rejection grounds are
+   illustrative (*"Usually the brief: wrong platform, missing tags or disclosure, reused
+   content, or the post being edited or deleted after you submitted"*) rather than the closed
+   four-item list below. **Confirmed by direct fetch 2026-09-02** after two audits disagreed.
+   Note that **"reused content" is itself a listed rejection ground on a clipping platform.**
+   It most plausibly means reposting another clipper's work rather than clipping a brand's own
+   source, but that is INFERENCE and worth asking a campaign manager before relying on it.
+   Platform default is **submit the link within 30 minutes** of posting; individual campaigns
+   tighten this (Lovable specifies 10), so read the campaign's own figure.
    → So the "we were too cynical" correction recorded here **does not apply to the campaigns
    we are actually looking at.** Rejection risk on Content Rewards is higher and less
    appealable than this entry implies. An appeal path does exist, but the grounds are open.

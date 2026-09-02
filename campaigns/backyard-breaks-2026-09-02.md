@@ -490,3 +490,41 @@ than eligibility.
 | Dedicated `backyardbreaks_*` account required | **VERIFIED**, and stricter than summarized: **one per platform**, plus mandated logo, bio template and bio link. |
 | (not reported) | **Scout audited 1 of 3 documents.** Docs 1–2 carry the hashtags, caption formula, no-comment rule and full account spec. |
 | (not reported) | **Drive assets are ~1.2 GB full stream recordings**, not pre-cut moments. Mining cost is real. |
+
+---
+
+## COO RESOLUTION — 2026-09-02
+
+This audit and the parallel Lovable audit disagreed on whether Whop's ToS protections govern
+Content Rewards campaigns. Resolved by fetching the primary page directly.
+
+**The Lovable audit is correct. This audit's "why not RED" reasoning is wrong on one point.**
+
+VERIFIED verbatim, `contentrewards.com/creators` (fetched via `r.jina.ai`, 2026-09-02):
+
+> "Every submission is reviewed by the brand or their campaign manager, and nothing approves
+> automatically."
+
+> "Why was my submission rejected? Usually the brief: wrong platform, missing tags or
+> disclosure, reused content, or the post being edited or deleted after you submitted."
+
+So for Backyard Breaks — a Content Rewards campaign:
+
+- **There is no 48-hour auto-approval backstop.** This audit credited one. Whop's ToS grants
+  it for Whop-native campaigns; Content Rewards is a separate operator and does not.
+- **Rejection grounds are illustrative ("Usually the brief: …"), not a closed enumerated set.**
+  This audit called them "contractually enumerated and closed". They are not.
+
+**Effect on the rating: none. YELLOW stands.** The rating rested on the rights position and the
+runway, and neither is touched. But the "why not RED" paragraph overstates our protection, and
+binding condition 6 (write the no-comment rule into the posting SOP) becomes *more* important
+rather than less — a ground-(i) style rejection is now less appealable than this audit assumed.
+
+**One further item worth flagging, unresolved:** Content Rewards lists **"reused content"** as a
+rejection ground on a platform whose entire business is clipping. It most plausibly means
+reposting another clipper's work rather than clipping the brand's own source, but that reading
+is INFERENCE. Worth a direct question to the campaign manager alongside the condition-5 items,
+since on a strict reading it could apply to any clip.
+
+Also noted: the platform default is **submit within 30 minutes** of posting, not the 10 minutes
+the Lovable brief specified — so campaigns can tighten it. Check the campaign's own figure.
