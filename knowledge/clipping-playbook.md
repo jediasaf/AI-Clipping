@@ -114,6 +114,23 @@ as an unsourced assumption.
    → **TikTok first for cold-start campaign work. Instagram is not a free second surface.**
 
 7. **Whop Content Rewards mechanics.** VERIFIED, with corrections in both directions.
+   **SCOPE CORRECTION 2026-09-02 — read this before applying anything in this entry.**
+   `contentrewards.com` is **not Whop**. Whop is the payment rail; Content Rewards is a
+   separate operator that writes its own rules, and every campaign we are currently evaluating
+   is a Content Rewards campaign. **The protections below govern Whop-native campaigns and do
+   NOT govern Content Rewards ones.** Specifically, Content Rewards' own creator page states
+   *"nothing approves automatically"* — there is no 48-hour auto-approval backstop — and its
+   rejection grounds are illustrative (*"Usually the brief: …"*) rather than the closed
+   four-item list below.
+   → So the "we were too cynical" correction recorded here **does not apply to the campaigns
+   we are actually looking at.** Rejection risk on Content Rewards is higher and less
+   appealable than this entry implies. An appeal path does exist, but the grounds are open.
+   → Also load-bearing: Content Rewards §19.1 grants a licence only over footage *"a Brand
+   provides"*, and §19.2 makes the **creator** warrant they *"have cleared all third-party
+   rights."* No brand ownership warranty, no indemnity, no liability allocation. The contract
+   actively assigns rights risk to us — which is why "the brand said it was approved" is not
+   sufficient when the footage is visibly third-party.
+
    → **We were too cynical about rejection.** The ToS *constrains* the brand: a seller may
    reject only where the participant breaks the offer criteria or program terms, where there is
    reasonable suspicion of fraud, or where Max Payout / End Date is reached. There is also a
@@ -162,6 +179,19 @@ as an unsourced assumption.
    so the fraction is currently a guess.
 
 ---
+
+### Research tradecraft — how to actually read these pages
+
+Recorded because two separate agents lost time to the same wall.
+
+- **JS-rendered pages: `https://r.jina.ai/<url>`** renders client-side pages server-side. This
+  cracked a Notion brief that had defeated two prior attempts, and `contentrewards.com` itself,
+  which is also client-side. Campaign pages returning an empty shell are not inaccessible —
+  they are unrendered. Verify anything important renders consistently rather than trusting a
+  single pass.
+- **Google Docs briefs:** append `?format=txt` to bypass the editor.
+- **A campaign listing page is not the brief.** Bible BFF's listing showed no entry gates while
+  its brief contained two hard ones. Never rate gates from the listing.
 
 ### Numbers we will NOT use
 
