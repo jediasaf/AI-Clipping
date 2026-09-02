@@ -65,6 +65,23 @@ SCORE
 3 POSSIBLE ANGLES
 ```
 
+## Tooling
+
+Do not hand-parse caption files. Run:
+
+```bash
+python3 scripts/transcript.py sources/<video>.en.vtt
+```
+
+It strips YouTube's inline timing tags, collapses rolling-caption duplicates
+(which otherwise double the transcript for zero added information), writes the full
+transcript to JSON, and prints only a bounded preview. Read the JSON for the parts you
+need rather than dumping the whole thing into context.
+
+Timestamps in that JSON are exact, so quote and cite them directly.
+
+Our source material is English. There is no translation step in this pipeline.
+
 ## Integrity rules
 
 **Never fabricate quotes or timestamps.** If you are working from a transcript, quote it
